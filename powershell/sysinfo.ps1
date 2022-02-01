@@ -1,11 +1,2 @@
-﻿function getIP{
-(Get-NetIPAddress).IPAddress | Select-String "192"
-}
-
-Write-Host(getIP)
-
-$IP = getIP
-
-Write-Host("This is our machine's IP: $IP")
-
-Write-Host("This machine's Ip is: {0}" -f $IP)
+﻿
+Send-MailMessage -To "bellerkr@mail.uc.edu" -From "kylebeller2@gmail.com" -Subject "IT3038C Windows SysInfo" -Body "Body of email" -SmtpServer smtp.gmail.com -Port 587 -UseSSL -Credential (GetCredential)
