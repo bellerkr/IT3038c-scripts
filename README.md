@@ -1,5 +1,3 @@
-#README
+#Lab 8 Web Scraping
 
-## smaller text 
-
-### smaller again
+##This script is supposed to find only the name and price of a wireless mouse from microcenter.com
